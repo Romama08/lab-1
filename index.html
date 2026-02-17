@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
 <header>
     <div class="logo">OnlineTickets</div>
     <nav>
@@ -20,88 +19,97 @@
     </nav>
 </header>
 
-
 <main>
 
-
-    <!-- Події -->
     <section id="events">
         <h2>Майбутні події</h2>
         <div class="events-grid">
-    <article class="event-card">
-        <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500" alt="Рок">
-        <h3>Концерт рок-гурту</h3>
-        <p><strong>Дата:</strong> 25 березня 2026</p>
-        <p><strong>Місце:</strong> Львів, Арена</p>
-        <p class="price">Ціна: 500 грн</p>
-    </article>
+            <article class="event-card">
+                <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500" alt="Рок">
+                <div class="event-content">
+                    <h3>Концерт рок-гурту</h3>
+                    <p><strong>Дата:</strong> 25 березня 2026</p>
+                    <p><strong>Місце:</strong> Львів, Арена</p>
+                    <p class="price">Ціна: 500 грн</p>
+                </div>
+            </article>
 
+            <article class="event-card">
+                <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=400" alt="Театр">
+                <div class="event-content">
+                    <h3>Театральна вистава</h3>
+                    <p><strong>Дата:</strong> 2 квітня 2026</p>
+                    <p><strong>Місце:</strong> Київ, Театр драми</p>
+                    <p class="price">Ціна: 350 грн</p>
+                </div>
+            </article>
 
-    <article class="event-card">
-        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=400" alt="Театр">
-        <h3>Театральна вистава</h3>
-        <p><strong>Дата:</strong> 2 квітня 2026</p>
-        <p><strong>Місце:</strong> Київ, Театр драми</p>
-        <p class="price">Ціна: 350 грн</p>
-    </article>
-
-
-    <article class="event-card">
-        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Фестиваль">
-        <h3>Музичний фестиваль</h3>
-        <p><strong>Дата:</strong> 10 травня 2026</p>
-        <p><strong>Місце:</strong> Одеса, Пляжна сцена</p>
-        <p class="price">Ціна: 800 грн</p>
-    </article>
-</div>
+            <article class="event-card">
+                <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Фестиваль">
+                <div class="event-content">
+                    <h3>Музичний фестиваль</h3>
+                    <p><strong>Дата:</strong> 10 травня 2026</p>
+                    <p><strong>Місце:</strong> Одеса, Пляжна сцена</p>
+                    <p class="price">Ціна: 800 грн</p>
+                </div>
+            </article>
+        </div>
     </section>
 
-
-    <!-- Мої бронювання -->
     <section id="bookings">
         <h2>Мої бронювання</h2>
-        <article>
-            <p>Тут відображаються ваші заброньовані квитки.</p>
-            <ul>
-                <li>Концерт рок-гурту — 2 квитки</li>
-                <li>Театральна вистава — 1 квиток</li>
-            </ul>
-        </article>
+        <div class="booking-container">
+            <div class="booking-card">
+                <div class="booking-details">
+                    <span class="booking-title">Концерт рок-гурту</span>
+                    <span class="booking-meta">Львів • 25.03.2026</span>
+                </div>
+                <div class="booking-status">
+                    <span class="ticket-count">2 квитки</span>
+                    <span class="badge success">Оплачено</span>
+                </div>
+            </div>
+
+            <div class="booking-card">
+                <div class="booking-details">
+                    <span class="booking-title">Театральна вистава</span>
+                    <span class="booking-meta">Київ • 02.04.2026</span>
+                </div>
+                <div class="booking-status">
+                    <span class="ticket-count">1 квиток</span>
+                    <span class="badge success">Оплачено</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!-- Про нас -->
     <section id="about">
         <h2>Про нас</h2>
-        <article>
-            <img src="https://picsum.photos/800/300?4" alt="Команда">
-            <p>
-                OnlineTickets — це сучасна платформа для швидкого та зручного
-                бронювання квитків на концерти, фестивалі, вистави та інші події.
-            </p>
-            <p>
-                Ми співпрацюємо з провідними організаторами заходів України
-                та гарантуємо безпечну оплату і миттєве підтвердження бронювання.
-            </p>
-
-
-            <h3>Наші переваги:</h3>
-            <ul>
-                <li>Швидке онлайн-бронювання</li>
-                <li>Безпечні платежі</li>
-                <li>Підтримка 24/7</li>
-                <li>Електронні квитки</li>
-            </ul>
+        <article class="about-content">
+            <img src="https://picsum.photos/800/300?4" alt="Команда" class="about-img">
+            <div class="about-text">
+                <p>OnlineTickets — це сучасна платформа для швидкого та зручного бронювання квитків на концерти, фестивалі, вистави та інші події.</p>
+                <p>Ми співпрацюємо з провідними організаторами заходів України та гарантуємо безпечну оплату і миттєве підтвердження бронювання.</p>
+                
+                <h3>Наші переваги:</h3>
+                <ul class="benefits-list">
+                    <li>Швидке онлайн-бронювання</li>
+                    <li>Безпечні платежі</li>
+                    <li>Підтримка 24/7</li>
+                    <li>Електронні квитки</li>
+                </ul>
+            </div>
         </article>
     </section>
 
 </main>
+
 <footer>
-    <p>м. Львів, вул. Степана Бадери, 777</p>
+    <p>м. Львів, вул. Степана Бандери, 777</p>
     <p>+38 (067) 123-45-67</p>
     <p>support@onlinetickets.ua</p>
-    <p>2026 OnlineTickets</p>
+    <p>&copy; 2026 OnlineTickets</p>
 </footer>
+
 </body>
 </html>
-
